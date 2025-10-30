@@ -12,7 +12,7 @@ public class Bill3 {
 		int numdiners = 3;
 
 		//you get the bill 
-		int bill = args[3];
+		int bill = Integer.parseInt(args[3]);
 		
 		//calulations in the "back"
 		int payment = bill / numdiners;
