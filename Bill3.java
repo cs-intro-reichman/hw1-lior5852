@@ -17,8 +17,11 @@ public class Bill3 {
 		//calulations in the "back"
 		double payment = (double) bill / numdiners;
 
+		//celling up
+		payment = Math.ceil(payment);
+
 		//you wanna do the payment
-		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + payment + " Shekels");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + payment + " Shekels each");
 
 	}
 }
