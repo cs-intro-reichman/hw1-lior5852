@@ -18,7 +18,7 @@ public class FVCalc {
 
 		// the totall + notlost any info
 
-		int totall = (int)Math.ceil(currentvalue * b);
+		int totall = (int)(currentvalue * b);
 
 		System.out.println("After " + years + " years, $" + currentvalue + " saved at " + rate + "% will yield $" + totall);
 		
