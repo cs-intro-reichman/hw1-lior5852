@@ -20,7 +20,7 @@ public class FVCalc {
 
 		int totall = (int)(currentvalue * b);
 
-		System.out.println(" After " + years + " years , " + currentvalue + " saved at " + rate + "%" + " will yield " + totall + "$");
+		System.out.println("After " + years + " years, " + currentvalue + " saved at " + "%" + rate + " will yield " + "$" + totall);
 		
 	}
 }
