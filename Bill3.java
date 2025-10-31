@@ -15,13 +15,10 @@ public class Bill3 {
 		int bill = Integer.parseInt(args[3]);
 		
 		//calulations in the "back"
-		int payment = bill / numdiners;
+		double payment = (double) bill / numdiners;
 
 		//you wanna do the payment
-		System.out.println("okay thanks for eating here ");
-		System.out.println("we are " + numdiners + name1 + name2 + name3 );
-		System.out.println("you total" + bill );
-		System.out.println("each has to pay " + payment );
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + payment + " Shekels");
 
 	}
 }
