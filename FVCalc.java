@@ -12,15 +12,15 @@ public class FVCalc {
 		int years = Integer.parseInt(args[2]);
 
 		// the totall with 2 diffrent opertaions
-		double a = (1 + rate);
+		double a = (rate/ 100) + 1 ;
 
 		double b = Math.pow(a,years);
 
-		// the totall
+		// the totall + notlost any info
 
-		int totall = (int)(currentvalue * b);
+		int totall = (int)Math.ceil(currentvalue * b);
 
-		System.out.println("After " + years + " years, " + currentvalue + " saved at " + "%" + rate + " will yield " + "$" + totall);
+		System.out.println("After " + years + " years, $" + currentvalue + " saved at " + rate + "% will yield $" + totall);
 		
 	}
 }
