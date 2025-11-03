@@ -18,6 +18,6 @@ public class NumWords {
 	// זו השארית הסופית
 	int ones = num;
 
-	System.out.println(houndreds + " hundreds," + tens + " tens, and " + ones + " ones.");
+	System.out.println(houndreds + " hundreds, " + tens + " tens, and " + ones + " ones.");
 	}
 }
