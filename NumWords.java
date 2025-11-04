@@ -11,7 +11,7 @@ public class NumWords {
 	int houndreds = num/100; 
 	num = num - (houndreds*100);
 
-	// כדי להגיע למספר מאות אז נחלק ב10
+	// כדי להגיע למספר עשרות אז נחלק ב10
 	int tens = num/10;
 	num = num - (tens*10);
 
