@@ -20,32 +20,25 @@ public class TimeFormat {
 		String period = "AM";
 		String hourszero = "";
 
-		if (hours > 12) {
+	//for 0000am and 1200 am
+		if (hours == 0) {
+			hours = 12;
+			period = "AM";
+		} else if (hours == 12) {
+			period = "PM";
+		}else if (hours > 12){
 			hours = hours - 12;
 			period = "PM";
-		} else {
-			//stays the same as before the check
 		}
+	//adds the zero to before
 		if (hours < 10) {
 			hourszero = "0" + hours;
 		} else {
 			hourszero = "" + hours;
 		}
 
-		//for 00:00am
-		if (hours == 0) {
-			hours = 12;
-			period = "AM";
-		}
-		//for 12:00pm
-		if (hours == 12) {
-			period = "PM";
-		}
-
-
-		//work on minutes
+	//work on minutes
 		String minzero = "";
-
 		if (minutes < 10) {
 			minzero = "0" + minutes;
 		} else {
